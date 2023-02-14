@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>-->
+  <title>Load Flix</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+  <script src='./js/script.js'></script>
+
+  <!--Cabeçalho-->
+  <header>
+    <div class="logo"><img src="./img/principa-1/logo.png"></div>
+    <h1>Load Flix - Filmes e Séries</h1>
+    
+
+    <form id="frmPesquisa">
+      
+      <ul class="lanc" name="lanc">
+          <a href="#lancGrid">Lançamentos</a>
+      </ul>
+      <ul class="lanc" name="lanc">
+        <a href="#destaqueGrid">Novidades</a>
+    </ul>
+
+    <input name="pesquisa" placeholder="Digite o nome do filme" />
+    <button>Pesquisar</button>
+    </form>
+
+  </header>
+  <!--Grid-->
+  <main class="container">
+    <section class="item-container">
+
+      <h2 id="destaqueGrid">Vale a pena ver de novo</h2>
+
+      <div class="card">
+        <div class="item-img" id="img-1"></div>
+        <h3>Destaque da Semana</h3>
+        <p>Divertida Mente</p>
+        <p>Ano:2015</p>
+        <a href="#" class="trailer">Trailer</a>
+      </div>
+      <div class="card">
+        <div class="item-img" id="img-2"></div>
+        <h3>Destaque da Semana</h3>
+        <p>Clube da Luta</p>
+        <p>Ano:1999</p>
+        <a href="#" class="trailer">Trailer</a>
+      </div>
+      <div class="card">
+        <div class="item-img" id="img-3"></div>
+        <h3>Destaque da Semana</h3>
+        <p>O Senhor dos Anéis</p>
+        <p>Ano:2002</p>
+        <a href="#" class="trailer">Trailer</a>
+      </div>
+
+      <h2 id="lancGrid">Novidades</h2>
+
+      <div class="card">
+        <div class="item-img" id="img-4"></div>
+        <h3>Lançamentos</h3>
+        <p>Sorria</p>
+        <p>Ano:2022</p>
+        <a href="#" class="trailer">Trailer</a>
+      </div>
+      <div class="card">
+        <div class="item-img" id="img-5"></div>
+        <h3>Lançamentos</h3>
+        <p>O Menu</p>
+        <p>Ano:2022</p>
+        <a href="#" class="trailer">Trailer</a>
+      </div>
+      <div class="card">
+        <div class="item-img" id="img-6"></div>
+        <h3>Lançamentos</h3>
+        <p>Órfã 2: A Origem</p>
+        <p>Ano:2022</p>
+        <a href="#" class="trailer">Trailer</a>
+      </div>
+    </section>
+  </main>
+  <!--Rodape-->
+  <footer>
+    <p>
+      <span class="bold">Load Flix - Filmes e Séries</span> &copy; 2023
+    </p>
+  </footer>
+</body>
+
+</html>
