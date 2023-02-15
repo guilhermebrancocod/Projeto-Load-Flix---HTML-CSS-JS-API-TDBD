@@ -1,40 +1,34 @@
-const apiKey = 'd9b4ab19';
-const frmPesquisa = document.querySelector("form");
-
-  if (frmPesquisa) {
-    frmPesquisa.onsubmit = (ev) => {
-      ev.preventDefault();
-  
-      const pesquisa = ev.target.pesquisa.value;
-  
-      if (pesquisa === "") {
-        alert("Preencha o campo!");
-        return;
-      }
-       /*fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=d9b4ab19`)   ---até aqui deu certo   */
-      fetch(`https://www.omdbapi.com/?i=${pesquisa}&apikey=${apiKey}`)
-        .then(result => (result.json()))
-        .then(json => carregaLista(json));
-    }
-
+fetch('https://api.themoviedb.org/3/movie/550?api_key=d34ce0ffbd6228a89395b248889b8991', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'd34ce0ffbd6228a89395b248889b8991',
+    'Content-Type': 'Content-Type'
   }
+})
 
-  /*console.log('teste')*/
+const MinhaApi_key = 'https://api.themoviedb.org/3/movie/550?api_key=d34ce0ffbd6228a89395b248889b8991'
 
-  const carregaLista = (json) => {
-    const lista = document.querySelector("div.container");
-    lista.innerHTML = "";
+/*fetch(MinhaApi_key) Teste: Até aqui deu certo
+.then(response => response.json())
+.then(data => {
+  // manipula os dados retornados pela API
+  console.log(data);
+})
+.catch(error => {
+  console.error(error);
+});*/
 
-    json.Search.forEach(element => {
-      console.log(element);
-  
-      let item =  document.createElement("div");
-      item.classList.add("item-container");
-  
-      item.innerHTML = `<img src="${element.Poster}" /><h2>${element.Title}</h2>`
-  
-      lista.appendChild(item-container);
-  
-     });
-    }  
-    console.log('teste')
+const btn01 = document.getElementById('btnpesquisa');
+btn01.onclick = () => {
+  fetch(MinhaApi_key)
+    .then(response => response.json())
+    .then(data => {
+      const userInfo = document.getElementById('card');
+      userInfo.innerHTML = `
+      <p>${data.id}</p>
+      <p>${data.original_title}</p>
+      <p>${data.release_date}</p>
+    `;
+    })
+    .catch(error => console.error(error));
+};

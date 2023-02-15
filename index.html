@@ -17,27 +17,25 @@
 
 <body>
 
-  <script src='./js/script.js'></script>
-
   <!--Cabeçalho-->
   <header>
     <div class="logo"><img src="./img/principa-1/logo.png"></div>
     <h1>Load Flix - Filmes e Séries</h1>
-    
 
-    <form id="frmPesquisa">
-      
+
+    <form id="frmPesquisa" onsubmit="return false;">
+
       <ul class="lanc" name="lanc">
-          <a href="#lancGrid">Lançamentos</a>
+        <a href="#lancGrid">Lançamentos</a>
       </ul>
       <ul class="lanc" name="lanc">
         <a href="#destaqueGrid">Novidades</a>
-    </ul>
+      </ul>
 
-    <input name="pesquisa" placeholder="Digite o nome do filme" />
-    <button>Pesquisar</button>
+      <input name="pesquisa" id="pesquisa" placeholder="Digite o nome do filme e pesquise ao lado direito" />
+      <button onclick="pesquisar()" class="btnpesquisa" id="btnpesquisa" placeholder="Pesquise"></button></button>
     </form>
-
+    <script src='./js/script.js'></script>
   </header>
   <!--Grid-->
   <main class="container">
@@ -45,26 +43,29 @@
 
       <h2 id="destaqueGrid">Vale a pena ver de novo</h2>
 
-      <div class="card">
+      <div class="card" id="card">
         <div class="item-img" id="img-1"></div>
         <h3>Destaque da Semana</h3>
-        <p>Divertida Mente</p>
-        <p>Ano:2015</p>
-        <a href="#" class="trailer">Trailer</a>
+        <p class="nomeFilme">Divertida Mente</p>
+        <p class="ano">Ano:2015</p>
+        <button class="infoItem2" id="infoItem">Sinopse</button>
+        <a href="https://www.youtube.com/watch?v=ukQeR3zYncw" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-2"></div>
         <h3>Destaque da Semana</h3>
         <p>Clube da Luta</p>
         <p>Ano:1999</p>
-        <a href="#" class="trailer">Trailer</a>
+        <button class="infoItem2" id="infoItem">Sinopse</button>
+        <a href="https://www.youtube.com/watch?v=Fs0-4NLSO2Y" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-3"></div>
         <h3>Destaque da Semana</h3>
         <p>O Senhor dos Anéis</p>
         <p>Ano:2002</p>
-        <a href="#" class="trailer">Trailer</a>
+        <button class="infoItem3" id="infoItem">Sinopse</button>
+        <a href="https://www.youtube.com/watch?v=0i86oM1nHjM" class="trailer">Trailer</a>
       </div>
 
       <h2 id="lancGrid">Novidades</h2>
@@ -74,21 +75,24 @@
         <h3>Lançamentos</h3>
         <p>Sorria</p>
         <p>Ano:2022</p>
-        <a href="#" class="trailer">Trailer</a>
+        <button class="infoItem4" id="infoItem">Sinopse</button>
+        <a href="https://www.youtube.com/watch?v=F_BZre3NPMM" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-5"></div>
         <h3>Lançamentos</h3>
         <p>O Menu</p>
         <p>Ano:2022</p>
-        <a href="#" class="trailer">Trailer</a>
+        <button class="infoItem5" id="infoItem">Sinopse</button>
+        <a href="https://www.youtube.com/watch?v=C_uTkUGcHv4" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-6"></div>
         <h3>Lançamentos</h3>
         <p>Órfã 2: A Origem</p>
         <p>Ano:2022</p>
-        <a href="#" class="trailer">Trailer</a>
+        <button class="infoItem6" id="infoItem">Sinopse</button>
+        <a href="https://www.youtube.com/watch?v=wmhk4cjkKiE" class="trailer">Trailer</a>
       </div>
     </section>
   </main>
