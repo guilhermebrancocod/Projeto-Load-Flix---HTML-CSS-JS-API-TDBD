@@ -19,52 +19,52 @@
 
   <!--Cabeçalho-->
   <header>
-    <div class="logo"><img src="./img/principa-1/logo.png"></div>
+    <div class="logo"><img src="./img/logo/logo.png"></div>
     <h1>Load Flix - Filmes e Séries</h1>
 
 
     <form id="frmPesquisa" onsubmit="return false;">
 
-      <ul class="lanc" name="lanc">
+      <ul  class="lanc" name="lanc">
         <a href="#lancGrid">Lançamentos</a>
       </ul>
       <ul class="lanc" name="lanc">
-        <a href="#destaqueGrid">Novidades</a>
+        <a href="#destaqueGrid">Home</a>
       </ul>
 
       <input name="pesquisa" id="pesquisa" placeholder="Digite o nome do filme e pesquise ao lado direito" />
-      <button onclick="pesquisar()" class="btnpesquisa" id="btnpesquisa" placeholder="Pesquise"></button></button>
+      <button>Pesquisar</button>
     </form>
     <script src='./js/script.js'></script>
   </header>
   <!--Grid-->
   <main class="container">
+    <div class="item">
     <section class="item-container">
-
       <h2 id="destaqueGrid">Vale a pena ver de novo</h2>
 
       <div class="card" id="card">
         <div class="item-img" id="img-1"></div>
         <h3>Destaque da Semana</h3>
-        <p class="nomeFilme">Divertida Mente</p>
+        <p class="title">Divertida Mente</p>
         <p class="ano">Ano:2015</p>
-        <button class="infoItem2" id="infoItem">Sinopse</button>
+        <button  onclick=infoItem() class="infoItem" id="infoItem">Sinopse</button>
         <a href="https://www.youtube.com/watch?v=ukQeR3zYncw" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-2"></div>
         <h3>Destaque da Semana</h3>
-        <p>Clube da Luta</p>
-        <p>Ano:1999</p>
-        <button class="infoItem2" id="infoItem">Sinopse</button>
+        <p class="title">Clube da Luta</p>
+        <p class="ano">Ano:1999</p>
+        <button  onclick=infoItem() class="infoItem" id="infoItem">Sinopse</button>
         <a href="https://www.youtube.com/watch?v=Fs0-4NLSO2Y" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-3"></div>
         <h3>Destaque da Semana</h3>
-        <p>O Senhor dos Anéis</p>
-        <p>Ano:2002</p>
-        <button class="infoItem3" id="infoItem">Sinopse</button>
+        <p class="title">O Senhor dos Anéis</p>
+        <p class="ano">Ano:2002</p>
+        <button  onclick=infoItem() class="infoItem" id="infoItem">Sinopse</button>
         <a href="https://www.youtube.com/watch?v=0i86oM1nHjM" class="trailer">Trailer</a>
       </div>
 
@@ -73,28 +73,29 @@
       <div class="card">
         <div class="item-img" id="img-4"></div>
         <h3>Lançamentos</h3>
-        <p>Sorria</p>
-        <p>Ano:2022</p>
-        <button class="infoItem4" id="infoItem">Sinopse</button>
+        <p class="title">Sorria</p>
+        <p class="ano">Ano:2022</p>
+        <button  onclick=infoItem() class="infoItem" id="infoItem">Sinopse</button>
         <a href="https://www.youtube.com/watch?v=F_BZre3NPMM" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-5"></div>
         <h3>Lançamentos</h3>
-        <p>O Menu</p>
-        <p>Ano:2022</p>
-        <button class="infoItem5" id="infoItem">Sinopse</button>
+        <p class="title">O Menu</p>
+        <p class="ano">Ano:2022</p>
+        <button  onclick=infoItem() class="infoItem" id="infoItem">Sinopse</button>
         <a href="https://www.youtube.com/watch?v=C_uTkUGcHv4" class="trailer">Trailer</a>
       </div>
       <div class="card">
         <div class="item-img" id="img-6"></div>
         <h3>Lançamentos</h3>
-        <p>Órfã 2: A Origem</p>
-        <p>Ano:2022</p>
-        <button class="infoItem6" id="infoItem">Sinopse</button>
+        <p class="title">Órfã 2: A Origem</p>
+        <p class="ano">Ano:2022</p>
+        <button  onclick=infoItem() class="infoItem" id="infoItem">Sinopse: </button>
         <a href="https://www.youtube.com/watch?v=wmhk4cjkKiE" class="trailer">Trailer</a>
       </div>
     </section>
+  </div>
   </main>
   <!--Rodape-->
   <footer>

@@ -41,7 +41,7 @@ form input {
    border-radius: 20px;
 }
 
-.btnpesquisa {
+form button {
    margin: 5px;
    padding: 5px 15px;
    background-color: azure;
@@ -111,27 +111,27 @@ h2 {
 }
 
 #img-1 {
-   background-image: url('../img/principal-2/divertidamente.png');
+   background-image: url('../img/filmes/divertidamente.png');
 }
 
 #img-2 {
-   background-image: url('../img/principal-2/clubedaluta.jpg');
+   background-image: url('../img/filmes/clubedaluta.jpg');
 }
 
 #img-3 {
-   background-image: url('../img/principal-2/senhor.jpg');
+   background-image: url('../img/filmes/senhor.jpg');
 }
 
 #img-4 {
-   background-image: url('../img/principal-2/sorria.jpg');
+   background-image: url('../img/filmes/sorria.jpg');
 }
 
 #img-5 {
-   background-image: url('../img/principal-2/omenu.jpg');
+   background-image: url('../img/filmes/omenu.jpg');
 }
 
 #img-6 {
-   background-image: url('../img/principal-2/aorfa.jpg');
+   background-image: url('../img/filmes/aorfa.jpg');
 }
 
 h3 {
@@ -141,8 +141,8 @@ h3 {
    font-size: 24px;
 }
 
-p {
-   font-size: 18px;
+p.title {
+   font-size: 20px;
    font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -171,15 +171,14 @@ p {
    background-color: tomato;
 }
 
-.infoItem1,
-.infoItem2,
-.infoItem3,
-.infoItem4,
-.infoItem5,
-.infoItem6 {
+.infoItem {
    padding: 5px;
    border-bottom: black solid 2px;
    margin: 10px;
+   transition: .5s;
+}
+.infoItem:hover {
+   background-color: tomato;
 }
 
 /*Footer*/
