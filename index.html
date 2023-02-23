@@ -12,7 +12,6 @@
   <!-- <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>-->
   <title>Load Flix</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -25,11 +24,11 @@
 
     <form id="frmPesquisa" onsubmit="return false;">
 
-      <ul  class="lanc" name="lanc">
-        <a href="#lancGrid">Lançamentos</a>
+      <ul  class="lanc" name="lanc" type="button">
+        <a id="lancLanc" href="#lancGrid">Lançamentos</a>
       </ul>
-      <ul class="lanc" name="lanc">
-        <a href="#destaqueGrid">Home</a>
+      <ul class="lanc" name="lanc" type="button" >
+        <a id="lancHome" href="#destaqueGrid">Home</a>
       </ul>
 
       <input name="pesquisa" id="pesquisa" placeholder="Digite o nome do filme e pesquise ao lado direito" />

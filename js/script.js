@@ -66,16 +66,35 @@ const carregaLista = (json) => {
     item.innerHTML = `<img src="${element.backdrop_path}" /><p class="title">${element.original_title}</p><p class="ano">Ano:${element.release_date}</p><button onclick="infoItem(${element.id})" class="infoItem">Sinopse</button><a href="#" class="trailer">trailer</a>`;
 
     lista.appendChild(item);
+
   });
+
+  const retorneMenu = document.getElementById('lancHome')
+
+retorneMenu.addEventListener("click",function(e){
+  if (e.target === retorneMenu){
+    window.location.reload(true)
+  }
+})
+
+const retorneLanc = document.getElementById('lancLanc')
+
+retorneLanc.addEventListener("click", function(e){
+  if(e.target === retorneLanc){
+    window.location.href = "C:/pageWeb/index.html";
+    /*window.location.reload(true)*/
+  }
+})
+
 }
+
 const infoItem = (id) => {
   fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=d34ce0ffbd6228a89395b248889b8991`)
     .then(response => response.json())
     .then(json => {
-      alert(`SINOPSE DO FILME SELECIONADO: ${json.overview}` );
+      alert(`SINOPSE DO FILME SELECIONADO: ${json.overview}`);
     })
 };
-
 
 
 
